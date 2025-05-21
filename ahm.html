@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background:  radial-gradient(rgb(156, 163, 230), lightgreen);
+    }
+    h2 {
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    form {
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+     }
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    input[type="text"]{
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #45a049;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+<center>
+    <h1>Feedback Form</h1>
+    <p>We value your feedback! Please fill out the form below:</p>
+</center>
+<center>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Your feedback" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+</center>
+</body>
+</html>
